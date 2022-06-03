@@ -1,46 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  
-  <title>Interactive rating component</title>
+    <title>Interactive rating component</title>
 
-<script src="https://kit.fontawesome.com/52e2bf90a9.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div class="rating-form" id="main-display">
+    <script
+      src="https://kit.fontawesome.com/52e2bf90a9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="rating-form" id="main-display">
+      <span class="star-icon"><i class="fa-solid fa-star"></i></span>
+      <h1>How did we do?</h1>
 
-  <span class="star-icon"><i class="fa-solid fa-star"></i></span>
-  <h1>How did we do?</h1>
+      <p>
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
 
-  <p>Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!</p>
-
-
-  <form id="rating-scale">     
-    <div class="ratings" id="ratings">
-      <input type="button" value="1" class="button" onclick="setRating(this.value, event)">
-      <input type="button" value="2" class="button" onclick="setRating(this.value, event)">
-      <input type="button" value="3" class="button" onclick="setRating(this.value, event)">
-      <input type="button" value="4" class="button" onclick="setRating(this.value, event)">
-      <input type="button" value="5" class="button" onclick="setRating(this.value, event)">
+      <form id="rating-scale">
+        <div class="ratings" id="ratings">
+          <input
+            type="button"
+            value="1"
+            class="button"
+            onclick="setRating(this.value, event)"
+          />
+          <input
+            type="button"
+            value="2"
+            class="button"
+            onclick="setRating(this.value, event)"
+          />
+          <input
+            type="button"
+            value="3"
+            class="button"
+            onclick="setRating(this.value, event)"
+          />
+          <input
+            type="button"
+            value="4"
+            class="button"
+            onclick="setRating(this.value, event)"
+          />
+          <input
+            type="button"
+            value="5"
+            class="button"
+            onclick="setRating(this.value, event)"
+          />
+        </div>
+        <input
+          type="submit"
+          value="Submit"
+          class="submit-button"
+          id="submit-button"
+        />
+      </form>
     </div>
-    <input type="submit" value="Submit" class="submit-button" id="submit-button">
-    </form>
-  
-</div>
-  
-  <div class="attribution">
-    Coded by Ashleigh Strahan and <a href="#"></a>open-sourced on GitHub</a>
-  </div>
 
-  <script src="script.js"></script>
-</body>
+    <div class="coding-name-link">
+      Coded by Ashleigh Strahan and
+      <a
+        href="https://github.com/ashleighstrahan/interactive-rating-component"
+        target="_blank"
+        >open-sourced on GitHub</a
+      >
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>

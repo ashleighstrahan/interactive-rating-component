@@ -2,6 +2,7 @@ let rating = null;
 
 function setRating(value, event) {
   rating = value;
+
   if (document.querySelector("#ratings input.active") != null) {
     document.querySelector("#ratings input.active").classList.remove("active");
   }
@@ -10,8 +11,12 @@ function setRating(value, event) {
 
 function showThankYou(event) {
   event.preventDefault();
-  let display = document.querySelector("#main-display");
-  display.innerHTML = `
+  if (rating === null) {
+    let heading = document.querySelector("h1");
+    heading.innerHTML = `<small>Select a rating to submit 😢</small>`;
+  } else {
+    let display = document.querySelector("#main-display");
+    display.innerHTML = `
     <div class="thank-you-display">
 
   <img src="images/illustration-thank-you.svg" alt="Thank you image">
@@ -23,6 +28,7 @@ function showThankYou(event) {
   don’t hesitate to <br /> get in touch!</p>
 </div>
 `;
+  }
 }
 
 let submitButton = document.querySelector("#submit-button");
