@@ -1,3 +1,13 @@
+let rating = null;
+
+function setRating(value, event) {
+  rating = value;
+  if (document.querySelector("#ratings input.active") != null) {
+    document.querySelector("#ratings input.active").classList.remove("active");
+  }
+  event.target.classList.add("active");
+}
+
 function showThankYou(event) {
   event.preventDefault();
   let display = document.querySelector("#main-display");
@@ -5,7 +15,7 @@ function showThankYou(event) {
     <div class="thank-you-display">
 
   <img src="images/illustration-thank-you.svg" alt="Thank you image">
-  <div class="displayed-score-message">You selected <span id="selected-rating-score">4</span> out of 5</div> 
+  <div class="displayed-score-message">You selected <span id="selected-rating-score">${rating}</span> out of 5</div> 
 
   <h2>Thank you!</h2>
 
@@ -17,5 +27,3 @@ function showThankYou(event) {
 
 let submitButton = document.querySelector("#submit-button");
 submitButton.addEventListener("click", showThankYou);
-
-let ratingButtons = document.querySelectorAll(#)

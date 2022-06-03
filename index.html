@@ -25,28 +25,17 @@
 
 
   <form id="rating-scale">     
-    <div class="ratings">
-      <input type="button" value="1" id="rating-one">
-      <input type="button" value="2" id="rating-two">
-      <input type="button" value="3" id="rating-three">
-      <input type="button" value="4" id="rating-four">
-      <input type="button" value="5" id="rating-five">
+    <div class="ratings" id="ratings">
+      <input type="button" value="1" class="button" onclick="setRating(this.value, event)">
+      <input type="button" value="2" class="button" onclick="setRating(this.value, event)">
+      <input type="button" value="3" class="button" onclick="setRating(this.value, event)">
+      <input type="button" value="4" class="button" onclick="setRating(this.value, event)">
+      <input type="button" value="5" class="button" onclick="setRating(this.value, event)">
     </div>
     <input type="submit" value="Submit" class="submit-button" id="submit-button">
     </form>
   
 </div>
-
-<div class="thank-you-display">
-
-  <img src="images/illustration-thank-you.svg" alt="Thank you image">
-  <div class="displayed-score-message">You selected <span id="selected-rating-score">4</span> out of 5</div> 
-
-  <h2>Thank you!</h2>
-
-  <p class="thank-you-message">We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!</p>
-</div>`;
   
   <div class="attribution">
     Coded by Ashleigh Strahan and <a href="#"></a>open-sourced on GitHub</a>

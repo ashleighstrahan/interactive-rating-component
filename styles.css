@@ -83,7 +83,7 @@ h2 {
   margin-top: 20px;
 }
 
-.ratings input {
+.button {
   border-radius: 50%;
   border: 1px solid #283039;
   background-color: #283039;
@@ -93,13 +93,13 @@ h2 {
   height: 55px;
 }
 
-.ratings input:hover {
+.button:hover {
   cursor: pointer;
   background-color: hsl(25, 97%, 53%);
   border-color: hsl(25, 97%, 53%);
 }
 
-.ratings input:active {
+.button:active {
   background-color: hsl(217, 12%, 63%);
   border-color: hsl(217, 12%, 63%);
 }
