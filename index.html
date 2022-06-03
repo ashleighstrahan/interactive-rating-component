@@ -4,45 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   
   <title>Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+<script src="https://kit.fontawesome.com/52e2bf90a9.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="rating-form" id="main-display">
 
-  <!-- Rating state start -->
+  <span class="star-icon"><i class="fa-solid fa-star"></i></span>
+  <h1>How did we do?</h1>
 
-  How did we do?
+  <p>Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!</p>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
 
-  1 2 3 4 5
+  <form id="rating-scale">     
+    <div class="ratings">
+      <input type="button" value="1" id="rating-one">
+      <input type="button" value="2" id="rating-two">
+      <input type="button" value="3" id="rating-three">
+      <input type="button" value="4" id="rating-four">
+      <input type="button" value="5" id="rating-five">
+    </div>
+    <input type="submit" value="Submit" class="submit-button" id="submit-button">
+    </form>
+  
+</div>
 
-  Submit
+<div class="thank-you-display">
 
-  <!-- Rating state end -->
+  <img src="images/illustration-thank-you.svg" alt="Thank you image">
+  <div class="displayed-score-message">You selected <span id="selected-rating-score">4</span> out of 5</div> 
 
-  <!-- Thank you state start -->
+  <h2>Thank you!</h2>
 
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
+  <p class="thank-you-message">We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!</p>
+</div>`;
   
   <div class="attribution">
     Coded by Ashleigh Strahan and <a href="#"></a>open-sourced on GitHub</a>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
